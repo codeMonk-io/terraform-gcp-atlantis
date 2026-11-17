@@ -7,9 +7,6 @@ variable "vm_name1" {
   type = string
 }
 
-variable "vm_name2" {
-  type = string
-}
 
 variable "machine_type" {
   type = string

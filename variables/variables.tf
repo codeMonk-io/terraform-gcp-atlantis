@@ -36,10 +36,6 @@ variable "vm_name1" {
   type        = string
 }
 
-variable "vm_name2" {
-  description = "Second VM name"
-  type        = string
-}
 
 variable "service_account_email" {
   description = "Service account email for the first VM"

@@ -10,16 +10,15 @@ module "vpc" {
 }
 
 module "compute" {
-  source = "../resources/compute"
-
+  source                = "../resources/compute"
   project_id            = var.project_id
   vm_name1              = var.vm_name1
-  vm_name2              = var.vm_name2
   machine_type          = var.machine_type
   zone                  = var.zone
   subnetwork            = module.vpc.subnet_self_link
   service_account_email = var.service_account_email
 }
+
 
 module "storage" {
   source = "../resources/storage"

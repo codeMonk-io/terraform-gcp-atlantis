@@ -1,0 +1,15 @@
+
+version: 3
+
+projects:
+  - name: infrastructure
+    dir: variables
+    workspace: default
+
+    autoplan:
+      enabled: true
+      when_modified:
+        - "*.tf*"
+        - ".terraform.lock.hcl"
+        - "../resources/**/*.tf*"
+        - "../atlantis.yaml"
