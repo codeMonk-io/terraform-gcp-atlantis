@@ -27,3 +27,7 @@ module "storage" {
   region      = var.region
   bucket_name = var.bucket_name
 }
+
+module "iam" {
+  source = "../resources/iam"
+}
