@@ -19,10 +19,10 @@ output "vm_1_public_ip" {
   value = module.compute.vm_1_public_ip
 }
 
-output "bucket_name" {
-  value = module.storage.bucket_name
-}
+# output "bucket_name" {
+#   value = module.storage.bucket_name
+# }
 
-output "bucket_url" {
-  value = module.storage.bucket_url
-}
+# output "bucket_url" {
+#   value = module.storage.bucket_url
+# }
